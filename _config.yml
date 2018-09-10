@@ -1,11 +1,11 @@
 # Site settings
-author: Travis
-title: Learn.Travis
+author: Travis T
+title: Travis.Learn
 header-img: img/home-bg.png
 email: travistokuyama@gmail.com
-copyright_name: Travis
+copyright_name: Travis T
 description: > # this means to ignore newlines until "baseurl:"
-  Lifelong learning
+  Learning to learn
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  trav15
