@@ -2,7 +2,7 @@
 layout: post
 title:      "Rails Refactor or Renaming Rusty Rails Rendezvous"
 date:       2018-12-22 11:11:44 -0500
-permalink:  rails_project_-_thesamepage
+permalink:  rails_refactor
 ---
 
 
