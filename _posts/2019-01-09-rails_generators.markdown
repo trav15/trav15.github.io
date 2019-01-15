@@ -1,8 +1,8 @@
 ---
 layout: post
-title:      "Rails Generators"
+title:      "Rails Project - LendingLibrary"
 date:       2019-01-09 21:20:48 +0000
-permalink:  rails_generators
+permalink:  rails_project_lending_library
 ---
 
 Learning how to use the generate command to easliy generate most of what you need (and some of what you don't) quick and easily. 
