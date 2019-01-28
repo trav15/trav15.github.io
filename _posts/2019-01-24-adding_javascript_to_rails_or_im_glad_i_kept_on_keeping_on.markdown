@@ -4,7 +4,7 @@ title:      "Adding Javascript to Rails or I'm glad I kept on keeping on"
 date:       2019-01-25 00:58:42 +0000
 permalink:  adding_javascript_to_rails_or_im_glad_i_kept_on_keeping_on
 ---
-
+![rails with js](https://github.com/trav15/trav15.github.io/blob/master/img/lendinglibraryjs.gif?raw=true)
 
 For the 4th project in my Web Developer bootcamp the assignment was add a Javascript front-end to my previous Rails project (my 3rd project in the bootmcamp). This proved to be a little confusing so if you're past your Rails project and curious about what the next project looks like this may help.
 
