@@ -13,7 +13,7 @@ For my Final Project review it became evident that I did not fully understand tw
 So what is the difference between class and functional components? Well let's start off by defining each. A functional component is just what it's name implies: a function. It takes props as an argument and returns a React element. Pretty straightforward. But one gotcha is that you cannot use *setState()*. That is why it is sometimes refered to as a *stateless component*. 
 
 ```
-//A functional component to display likes. Likes sent down on props
+//A functional component to display likes:
 
 function showLikes(props) {
   return <p>You have {props.likes} likes</p>;
