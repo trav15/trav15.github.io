@@ -10,7 +10,7 @@ For my Final Project review it became evident that I did not fully understand tw
 
 ## Class vs Functional Components
 
-So what is the difference between class and functional components? Well let's start off by defining each. A functional component is just what it's name implies: a function. It takes props as an argument and returns a React element. Pretty straightforward. But one gotcha is that you cannot use *setState()*. That is why it is sometimes refered to as a *stateless component*. 
+So what is the difference between class and functional components? Well let's start off by defining each. A functional component is just what it's name implies: a function. It takes props as an argument and returns a React element. Pretty straightforward. But one gotcha is that it does not contain state and cannot use methods like *setState()*. That is why it is sometimes refered to as a *stateless component*. 
 
 ```
 //A functional component to display likes:
@@ -47,7 +47,8 @@ this.state.likes += 1
 ```
 
 Well, according to the [React documentation](https://reactjs.org/docs/react-component.html#state):
-> Never mutate this.state directly, as calling setState() afterwards may replace the mutation you made. Treat this.state as if it were immutable. Think of setState() as a request rather than an immediate command to update the component. For better perceived performance, React may delay it, and then update several components in a single pass. React does not guarantee that the state changes are applied immediately.
+> Never mutate this.state directly, as calling setState() afterwards may replace the mutation you made. Treat this.state as if it were immutable. 
+> Think of setState() as a request rather than an immediate command to update the component. For better perceived performance, React may delay it, and then update several components in a single pass. React does not guarantee that the state changes are applied immediately.
 
 React has setState() in place as part of it's state management and handles it's updates to give "better perceived performance". Calling setState() also always leads to re-render "unless shouldComponentUpdate() returns false". React also batches updates and so while using React it is best to abide and use setState() so that you can let React do it's thing the best way it sees fit. 
 
