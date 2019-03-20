@@ -46,5 +46,14 @@ but why not just change state like this:
 this.state.likes += 1
 ```
 
-Well, according to the [React documentation](https://reactjs.org/docs/components-and-props.html#props-are-read-only), 
-> "Props are Read-Only. Whether you declare a component as a function or a class, it must never modify its own props. Such functions are called “pure” because they do not attempt to change their inputs, and always return the same result for the same inputs."
+Well, according to the [React documentation](https://reactjs.org/docs/react-component.html#state):
+> Never mutate this.state directly, as calling setState() afterwards may replace the mutation you made. Treat this.state as if it were immutable. Think of setState() as a request rather than an immediate command to update the component. For better perceived performance, React may delay it, and then update several components in a single pass. React does not guarantee that the state changes are applied immediately.
+
+React has setState() in place as part of it's state management and handles it's updates to give "better perceived performance". Calling setState() also always leads to re-render "unless shouldComponentUpdate() returns false". React also batches updates and so while using React it is best to abide and use setState() so that you can let React do it's thing the best way it sees fit. 
+
+Understanding the React description of setState() reveals a deeper dive into how it works as it updates *asynchronously*. This can affect calls to this.state when there are multiple setState() called. From Learn.co here is a gif that shows how this asynchronous update affects when state is actually updated. 
+
+![setState gif](https://curriculum-content.s3.amazonaws.com/react/asynchronous-state-setting-example.gif)
+> The component finishes doing its current task before updating the state. In this case, it finishes executing the increment function in full before updating the state.
+
+So knowing the why and how setState() works is a glimpse into the innerworkings of React and helps you understand what is happening under the hood. Knowing the setState() updates asynchronously will save some headaches down the road as React views it more as "request" than "immediate command to update". 
